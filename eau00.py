@@ -1,5 +1,7 @@
 # COMBINATION OF 3 NUMBERS
+
 liste = []
+
 for a in range(10):
     for b in range(a, 10):
         for c in range(b, 10):
