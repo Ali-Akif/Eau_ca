@@ -24,5 +24,6 @@ b = int(sys.argv[2])
 if a > b:
     a, b = b, a
 
-for i in  range(a, b + 1):
-    print(i, end = " ")
+while a != b + 1:
+    print(a, end =" ")
+    a += 1
