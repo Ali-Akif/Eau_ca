@@ -29,12 +29,12 @@ elif sys.argv[1].isdigit():
     print("erreur.")
     exit()
 else:
-    a = sys.argv[1]
+    input_string = sys.argv[1]
 
 
 # Part 3 : Slicing
     
-output = upper_every_two_car(a)
+output = upper_every_two_car(input_string)
 
 
 # Part 4 : Display
