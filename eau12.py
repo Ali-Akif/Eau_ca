@@ -6,16 +6,10 @@ import sys
 # Part 1 : Function
 
 def bubble_sort(list):
-    compteur = len(list)
-
-    for _ in range(compteur):
-
-        for i in range(1, len(list)):
-            if int(list[i - 1]) > int(list[i]):
-                list[i - 1], list[i] = list[i], list[i - 1]
-
-        compteur -= 1
-
+    for _ in range(len(list)):
+        for i in range(len(list) - 1):
+            if int(list[i]) > int(list[i+1]):
+                list[i], list[i+1] = list[i+1], list[i]
     return(list)
 
 
@@ -33,7 +27,7 @@ array = sys.argv[1:]
 
 # Part 4 : Resolution
 
-result = bubble_sort(array)
+result = ", ".join(bubble_sort(array))
 
 
 # Part 5 : Display
