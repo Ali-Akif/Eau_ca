@@ -5,25 +5,22 @@ import sys
 
 # Part 1 : Error Handling
 
-if len(sys.argv) != 3:
-    print("erreur")
-    exit()
-elif not (sys.argv[1].isdigit() and sys.argv[2].isdigit()):
+if not (len(sys.argv) == 3 and sys.argv[1].isdigit() and sys.argv[2].isdigit()):
     print("erreur")
     exit()
 
 
 # Part 2 : Slicing
     
-a = int(sys.argv[1])
-b = int(sys.argv[2])
+number1 = int(sys.argv[1])
+number2 = int(sys.argv[2])
 
 
 # Part 3 : Resolution and Display
 
-if a > b:
-    a, b = b, a
+if number1 > number2:
+    number1, number2 = number2, number1
 
-while a != b + 1:
-    print(a, end =" ")
-    a += 1
+while number1 != number2 + 1:
+    print(number1, end =" ")
+    number1 += 1
