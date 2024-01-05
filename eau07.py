@@ -3,32 +3,24 @@
 import sys
 
 
-# Part 1 : Error Handling
+# Part 1 : Error Handling and Slicing
 
-if len(sys.argv) != 2:
-    print("erreur")
-    exit()
-elif sys.argv[1].isdigit():
+if len(sys.argv) != 2 or sys.argv[1].isdigit():
     print("erreur")
     exit()
 else:
-    a = sys.argv[1]
+    arguments = sys.argv[1].split(" ")
+    result = ""
 
 
-# Part 2 : Slicing
-    
-result = ""
-a = a.split(" ")
+# Part 2 : Resolution
 
-
-# Part 3 : Resolution
-
-for i in range(len(a)):
-    result += a[i][0].upper()
-    result += a[i][1:].lower()
+for i in range(len(arguments)):
+    result += arguments[i][0].upper()
+    result += arguments[i][1:].lower()
     result += " "
 
 
-#Part 4 : Display
+#Part 3 : Display
     
 print(result)
