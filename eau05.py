@@ -5,7 +5,7 @@ import sys
 
 # Part 1 : Error Handling
 
-if len(sys.argv) != 3 and sys.argv[1].isdigit() and sys.argv[2].isdigit(): 
+if len(sys.argv) != 3 and "".join(sys.argv[1:]).isdigit(): 
     print("erreur.")
     exit()
 
