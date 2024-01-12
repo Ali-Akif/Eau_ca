@@ -22,10 +22,7 @@ def upper_every_two_car(given_string):
 
 # Part 2 : Error Handling
 
-if len(sys.argv) != 2:
-    print("erreur.")
-    exit()
-elif sys.argv[1].isdigit():
+if len(sys.argv) != 2 or sys.argv[1].isdigit():
     print("erreur.")
     exit()
 else:
