@@ -21,7 +21,7 @@ if not (len(sys.argv) > 2 and "".join(sys.argv[1:]).isdigit()):
         exit()
 
 
-# Part 3 : Slicing and Convertion
+# Part 3 : Slicing
 
 input_array = sys.argv[1:]
 sorted_array = selection_sort(input_array)
