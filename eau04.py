@@ -8,7 +8,7 @@ import sys
 def nombre_premier_superieur(number_string):
     number_int = int(number_string)
     for i in range(number_int + 1, number_int + 21):
-        for nombre in [2, 3, 4, 5, 6, 7, 8, 9]:
+        for nombre in range(2, 10):
             if i % nombre == 0 and i != nombre:
                 break
         else:
