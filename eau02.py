@@ -5,13 +5,13 @@ import sys
 
 # Part 1 : Slicing
 
-terminal_arguments = sys.argv
+input_args = sys.argv
 
 
 # Part 2 : Error Handling, Resolution and Display
 
-if len(terminal_arguments) < 2:
+if len(input_args) < 2:
     print("erreur.")
     exit()
 else:
-    print("\n".join(terminal_arguments[:0:-1]))
+    print("\n".join(input_args[:0:-1]))
