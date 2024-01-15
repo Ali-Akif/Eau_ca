@@ -18,6 +18,8 @@ numbers = sorted(sys.argv[1:])
 # Part 3 : Resolution
 
 results = int(numbers[1]) - int(numbers[0])
+if "-" in str(results):
+    results = str(results).replace("-", "")
 
 
 # Part 4 : Display
